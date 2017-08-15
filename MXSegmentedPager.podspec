@@ -20,17 +20,16 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = "https://github.com/M6666/MXSegmentedPager"
-  s.license          = 'MIT'
+  s.license          = "MIT"
   s.author           = { "M6666" => "mantuosi.ex@gmail.com" }
-  s.source           = { :git => "https://github.com/M6666/MXSegmentedPager", :tag => "test.0.0.1"}
-  s.social_media_url = ''
+  s.source           = { :git => "https://github.com/M6666/MXSegmentedPager.git", :tag => "test.0.0.1"}
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, "7.0"
   s.requires_arc = true
 
   s.source_files = 'MXSegmentedPager/*.{m,h}'
   s.public_header_files = ["MXSegmentedPager/*.h"]
-  s.dependency 'HMSegmentedControl', :git => 'https://github.com/M6666/HMSegmentedControl', :commit => '876c66590c286169914e8d2f31328ee188969764'
+  s.dependency 'HMSegmentedControl', '1.5.4'
   s.dependency 'MXPagerView', '0.2.1'
   s.dependency 'MXParallaxHeader', '0.6.1'
   
