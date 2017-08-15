@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "MXSegmentedPager"
-  s.version          = "3.3.0"
+  s.version          = "3.3.2"
   s.summary          = "Segmented pager view with Parallax header."
   s.description      = <<-DESC
                        MXSegmentedPager combines [MXPagerView](https://github.com/maxep/MXPagerView) with [HMSegmentedControl](https://github.com/M6666/HMSegmentedControl) to control the page selection.
@@ -19,18 +19,19 @@ Pod::Spec.new do |s|
 
                        DESC
 
-  s.homepage         = "https://github.com/M6666/MXSegmentedPager"
-  s.license          = "MIT"
-  s.author           = { "M6666" => "mantuosi.ex@gmail.com" }
-  s.source           = { :git => "https://github.com/M6666/MXSegmentedPager.git", :tag => "test.0.0.1"}
+s.homepage         = "https://github.com/maxep/MXSegmentedPager"
+s.license          = 'MIT'
+s.author           = { "Maxime Epain" => "maxime.epain@gmail.com" }
+s.source           = { :git => "https://github.com/M6666/MXSegmentedPager.git", :tag => s.version.to_s }
+s.social_media_url = 'https://twitter.com/MaximeEpain'
 
-  s.platform     = :ios, "7.0"
-  s.requires_arc = true
+s.platform     = :ios, '7.0'
+s.requires_arc = true
 
-  s.source_files = 'MXSegmentedPager/*.{m,h}'
-  s.public_header_files = ["MXSegmentedPager/*.h"]
-  s.dependency 'HMSegmentedControl', '1.5.4'
-  s.dependency 'MXPagerView', '0.2.1'
-  s.dependency 'MXParallaxHeader', '0.6.1'
-  
+s.source_files = 'MXSegmentedPager/*.{m,h}'
+s.public_header_files = ["MXSegmentedPager/*.h"]
+s.dependency 'HMSegmentedControl', '1.5.4'
+s.dependency 'MXPagerView', '0.2.1'
+s.dependency 'MXParallaxHeader', '0.6.1'
+
 end
