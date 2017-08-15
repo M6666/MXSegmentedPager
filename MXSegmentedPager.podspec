@@ -8,9 +8,9 @@
 
 Pod::Spec.new do |s|
 
-  s.name             = "MXSegmentedPager"
-  s.version          = "3.3.3"
-  s.summary      = "A short description of MXSegmentedPager."
+  s.name            = "MXSegmentedPager"
+  s.version         = "3.3.4"
+  s.summary         = "Segmented pager view with Parallax header."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
