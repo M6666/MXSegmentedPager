@@ -1,37 +1,140 @@
 #
-# Be sure to run `pod lib lint MXSegmentedPager.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
+#  Be sure to run `pod spec lint MXSegmentedPager.podspec' to ensure this is a
+#  valid spec and to remove all comments including this before submitting the spec.
 #
-# Any lines starting with a # are optional, but encouraged
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
+#  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
+#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
 
 Pod::Spec.new do |s|
+
   s.name             = "MXSegmentedPager"
-  s.version          = "3.3.2"
-  s.summary          = "Segmented pager view with Parallax header."
-  s.description      = <<-DESC
-                       MXSegmentedPager combines [MXPagerView](https://github.com/maxep/MXPagerView) with [HMSegmentedControl](https://github.com/M6666/HMSegmentedControl) to control the page selection.
-                       The integration of [MXParallaxHeader](https://github.com/maxep/MXParallaxHeader) allows you to add an parallax header on top while keeping a reliable scrolling effect.
+  s.version          = "3.3.3"
+  s.summary      = "A short description of MXSegmentedPager."
 
-                       Frok from [MXSegmentedPager](https://github.com/maxep/MXSegmentedPager), fix the pattern of HMSegmentedControl.
+  # This description is used to generate tags and improve search results.
+  #   * Think: What does it do? Why did you write it? What is the focus?
+  #   * Try to keep it short, snappy and to the point.
+  #   * Write the description between the DESC delimiters below.
+  #   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.description  = <<-DESC
+                    MXSegmentedPager combines [MXPagerView](https://github.com/maxep/MXPagerView) with [HMSegmentedControl](https://github.com/M6666/HMSegmentedControl) to control the page selection.
+                    The integration of [MXParallaxHeader](https://github.com/maxep/MXParallaxHeader) allows you to add an parallax header on top while keeping a reliable scrolling effect.
 
-                       DESC
+                    Frok from [MXSegmentedPager](https://github.com/maxep/MXSegmentedPager), fix the pattern of HMSegmentedControl.
+                   DESC
 
-s.homepage         = "https://github.com/maxep/MXSegmentedPager"
-s.license          = 'MIT'
-s.author           = { "Maxime Epain" => "maxime.epain@gmail.com" }
-s.source           = { :git => "https://github.com/M6666/MXSegmentedPager.git", :tag => s.version.to_s }
-s.social_media_url = 'https://twitter.com/MaximeEpain'
+  s.homepage     = "https://github.com/m6666/MXSegmentedPager"
+  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
-s.platform     = :ios, '7.0'
-s.requires_arc = true
 
-s.source_files = 'MXSegmentedPager/*.{m,h}'
-s.public_header_files = ["MXSegmentedPager/*.h"]
-s.dependency 'HMSegmentedControl', '1.5.4'
-s.dependency 'MXPagerView', '0.2.1'
-s.dependency 'MXParallaxHeader', '0.6.1'
+  # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  Licensing your code is important. See http://choosealicense.com for more info.
+  #  CocoaPods will detect a license file if there is a named LICENSE*
+  #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
+  #
+
+  s.license      = "MIT"
+  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+
+
+  # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  Specify the authors of the library, with email addresses. Email addresses
+  #  of the authors are extracted from the SCM log. E.g. $ git log. CocoaPods also
+  #  accepts just a name if you'd rather not provide an email address.
+  #
+  #  Specify a social_media_url where others can refer to, for example a twitter
+  #  profile URL.
+  #
+
+  s.author             = "m6666"
+  # Or just: s.author    = "m6"
+  # s.authors            = { "m6" => "m6@yy.com" }
+  # s.social_media_url   = "http://twitter.com/m6"
+
+  # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  If this Pod runs only on iOS or OS X, then specify the platform and
+  #  the deployment target. You can optionally include the target after the platform.
+  #
+
+  # s.platform     = :ios
+  # s.platform     = :ios, "5.0"
+
+  #  When using multiple platforms
+  # s.ios.deployment_target = "5.0"
+  # s.osx.deployment_target = "10.7"
+  # s.watchos.deployment_target = "2.0"
+  # s.tvos.deployment_target = "9.0"
+
+
+  # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  Specify the location from where the source should be retrieved.
+  #  Supports git, hg, bzr, svn and HTTP.
+  #
+
+  s.source       = { :git => "https://github.com/M6666/MXSegmentedPager.git", :tag => s.version.to_s }
+
+
+  # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  CocoaPods is smart about how it includes source code. For source files
+  #  giving a folder will include any swift, h, m, mm, c & cpp files.
+  #  For header files it will include any header in the folder.
+  #  Not including the public_header_files will make all headers public.
+  #
+
+  s.platform     = :ios, '7.0'
+  s.requires_arc = true
+
+  s.source_files = 'MXSegmentedPager/*.{m,h}'
+  s.public_header_files = ["MXSegmentedPager/*.h"]
+  s.dependency 'HMSegmentedControl', '1.5.4'
+  s.dependency 'MXPagerView', '0.2.1'
+  s.dependency 'MXParallaxHeader', '0.6.1'
+
+  # s.public_header_files = "Classes/**/*.h"
+
+
+  # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  A list of resources included with the Pod. These are copied into the
+  #  target bundle with a build phase script. Anything else will be cleaned.
+  #  You can preserve files from being cleaned, please don't preserve
+  #  non-essential files like tests, examples and documentation.
+  #
+
+  # s.resource  = "icon.png"
+  # s.resources = "Resources/*.png"
+
+  # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
+
+
+  # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  Link your library with frameworks, or libraries. Libraries do not include
+  #  the lib prefix of their name.
+  #
+
+  # s.framework  = "SomeFramework"
+  # s.frameworks = "SomeFramework", "AnotherFramework"
+
+  # s.library   = "iconv"
+  # s.libraries = "iconv", "xml2"
+
+
+  # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  If your library depends on compiler flags you can set them in the xcconfig hash
+  #  where they will only apply to your library. If you depend on other Podspecs
+  #  you can include multiple dependencies to ensure it works.
+
+  # s.requires_arc = true
+
+  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  # s.dependency "JSONKit", "~> 1.4"
 
 end
