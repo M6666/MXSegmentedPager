@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint MXSegmentedPager.podspec' to ensure this is a
+#  Be sure to run `pod spec lint M6SegmentedPager.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -8,7 +8,14 @@
 
 Pod::Spec.new do |s|
 
-  s.name            = "MXSegmentedPager"
+  # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  These will help people to find your library, and whilst it
+  #  can feel like a chore to fill in it's definitely to your advantage. The
+  #  summary should be tweet-length, and the description more in depth.
+  #
+
+  s.name         = "M6SegmentedPager"
   s.version         = "3.3.4"
   s.summary         = "Segmented pager view with Parallax header."
 
@@ -49,7 +56,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = "m6666"
+  s.author             = { "m6" => "m6@yy.com" }
   # Or just: s.author    = "m6"
   # s.authors            = { "m6" => "m6@yy.com" }
   # s.social_media_url   = "http://twitter.com/m6"
@@ -76,7 +83,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/M6666/MXSegmentedPager.git", :tag => s.version.to_s }
+   s.source       = { :git => "https://github.com/M6666/MXSegmentedPager.git", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
