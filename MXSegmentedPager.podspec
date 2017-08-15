@@ -12,22 +12,25 @@ Pod::Spec.new do |s|
   s.version          = "3.3.0"
   s.summary          = "Segmented pager view with Parallax header."
   s.description      = <<-DESC
-                       MXSegmentedPager combines [MXPagerView](https://github.com/maxep/MXPagerView) with [HMSegmentedControl](https://github.com/HeshamMegid/HMSegmentedControl) to control the page selection.
+                       MXSegmentedPager combines [MXPagerView](https://github.com/maxep/MXPagerView) with [HMSegmentedControl](https://github.com/M6666/HMSegmentedControl) to control the page selection.
                        The integration of [MXParallaxHeader](https://github.com/maxep/MXParallaxHeader) allows you to add an parallax header on top while keeping a reliable scrolling effect.
+
+                       Frok from [MXSegmentedPager](https://github.com/maxep/MXSegmentedPager), fix the pattern of HMSegmentedControl.
+
                        DESC
 
-  s.homepage         = "https://github.com/maxep/MXSegmentedPager"
+  s.homepage         = "https://github.com/M6666/MXSegmentedPager"
   s.license          = 'MIT'
-  s.author           = { "Maxime Epain" => "maxime.epain@gmail.com" }
-  s.source           = { :git => "https://github.com/maxep/MXSegmentedPager.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/MaximeEpain'
+  s.author           = { "M6666" => "mantuosi.ex@gmail.com" }
+  s.source           = { :git => "https://github.com/M6666/MXSegmentedPager", :tag => "test.0.0.1"}
+  s.social_media_url = ''
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
   s.source_files = 'MXSegmentedPager/*.{m,h}'
   s.public_header_files = ["MXSegmentedPager/*.h"]
-  s.dependency 'HMSegmentedControl', '1.5.3'
+  s.dependency 'HMSegmentedControl', :git => 'https://github.com/M6666/HMSegmentedControl', :commit => '876c66590c286169914e8d2f31328ee188969764'
   s.dependency 'MXPagerView', '0.2.1'
   s.dependency 'MXParallaxHeader', '0.6.1'
   
