@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "M6SegmentedPager"
-  s.version         = "3.3.4"
+  s.version         = "3.3.7"
   s.summary         = "Segmented pager view with Parallax header."
 
   # This description is used to generate tags and improve search results.
