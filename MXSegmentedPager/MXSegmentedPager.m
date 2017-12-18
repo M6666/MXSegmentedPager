@@ -164,6 +164,7 @@
         // Create scroll-view
         _contentView = [[MXScrollView alloc] init];
         _contentView.delegate = self;
+        _contentView.scrollsToTop = NO;
         [self addSubview:_contentView];
     }
     return _contentView;
